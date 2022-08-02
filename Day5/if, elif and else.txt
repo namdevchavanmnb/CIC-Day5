@@ -1,0 +1,107 @@
+nanoQ1. Read a single digit number and write the number in word using Case
+
+./Selectionq1.sh
+
+read -p "enter the single digit number ; " number
+case $number in
+1)
+        echo "One"
+;;
+2)
+        echo "Two"
+;;
+3)
+        echo "Three"
+;;
+4)
+        echo "Four"
+;;
+5)
+        echo "Five"
+
+Q2Read a Number and Display the week day (Sunday, Monday,...)
+
+$ ./Selectionq2.sh
+
+read -p "enter the single digit number ; " number
+case $number in
+1)
+        echo "Sunday"
+;;
+2)
+        echo "Monday"
+;;
+3)
+        echo "Thusrday"
+;;
+4)
+        echo "Wensday"
+;;
+5)
+        echo "Thursday"
+;;
+6)
+        echo "Fraday"
+;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q3. Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,...
+
+./ifelif.sh
+read -p "Enter the input like 1, 10, 100, 1000 : "
+case $digit in
+1)
+        echo "Unit"
+;;
+10)
+        echo "Ten"
+;;
+100)
+        echo "Hundred"
+;;
+1000)
+        echo "Thousand"
+;;
+10000)
+        echo "Ten Thousand"
+
+
+
+
+
+
+Q4 Write a program that takes User Inputs and does Unit Conversion of
+
+different Length units
+1. Feet to Inch 3. Inch to Feet
+2. Feet to Meter 4. Meter to Feet
+
+
+./Selectionq4.sh
+
+echo "Enter an option between 1 and 4"
+echo "1.Feet to Inch"
+echo "2.Feet to Meter"
+echo "3.Inch to Feet"
+echo "4.Meter to Feet"
+read option
+case $option in
+    1)
+    read -p "enter no of feets:" no_of_feets
+    no_of_inches=$(echo "scale=4;$no_of_feets * 12" | bc -1)
+    echo "$no_of_feets = $no_of_inches inches"
+    ;;
+    3) read -p "enter no of inches;" no_of_inches
+    no_of_feets=$(echo "scale=4;$no_of_inches /12" | bc -1)
+    echo "$no_of_inches inches = $no_of_feets feets"

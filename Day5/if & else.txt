@@ -1,0 +1,59 @@
+Q1. Write a program that reads 5 Random 3 Digit values and then outputs the minimum
+
+and the maximum value
+
+e=$(($(($RANDOM%$range))+$x))
+
+echo $a $b $c $d $e
+
+max=$a
+min=$e
+if [ $b -gt $max ]
+then
+        max=$b
+fi
+if [ $c -gt $max ]
+then
+        max=$c
+fi
+if [ $d -gt $max ]
+then
+
+
+
+Q2./Daymonth.sh
+read -p " Enter Date:-" date
+read -p " Enter Month:-" Month
+if [ $month -ge 3 -a $month  -le 6 ]
+then
+    if [ $month -ge 3 -a $date -ge 20 -o $month -le 6 -a $date -le 20 ]
+    then
+        echo "true"
+    else
+        echo "false"
+    fi
+    else
+        echo "false"
+    fi
+
+
+Q3./leapyear.sh
+read -p "Enter a year ; " year
+if [ 'expr $year % 4' -eq 0 -a expr $year % 100 |= 0 -o expr $year % 40>
+then
+     echo "$year is a leap year"
+else
+     echo "$year is not a leap year"
+fi
+
+
+
+Q4 ./coinflip.sh
+
+#!/bin/bash -x
+coin=$((RANDOM%2))
+if [ $coin -eq 0 ]
+then
+        echo "Heads"
+else
+        echo "Tails"

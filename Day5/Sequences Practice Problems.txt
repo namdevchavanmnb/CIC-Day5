@@ -1,0 +1,47 @@
+Q 1Use Random Function (( RANDOM )) to get Single Digit
+
+./Randomsdigit.sh
+
+#!/bin/bash -x
+echo $((RANDOM%100))
+
+
+
+Q 2Use Random to get Dice Number between 1 to 6
+
+./Randomdice.sh
+
+x=1 #lower_limt (not equal to 0)
+y=6
+range=$((y-x+1))
+r=$(($(($RANDOM%$range))+x))
+echo $r
+
+
+Q3Add two Random Dice Number and Print the Result
+
+ ./Randomdice.sh
+
+#!/bin/bash -x
+        dice1=$((RANDOM%6))
+        dice2=$((RANDOM%6))
+        sum=$((dice1+dice2))
+        echo $sum
+
+
+Q4
+
+Write a program that reads 5 Random 2 Digit values , then find their
+
+sum and the average
+
+ ./Ravg.sh
+#!/bin/bash -x
+        dice1=$((RANDOM%6))
+        dice2=$((RANDOM%6))
+        sum=$((dice1+dice2))
+        echo $sum
+
+
+
+
